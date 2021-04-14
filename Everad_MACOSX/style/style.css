@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/myriadpro-regular.eot'); 
+	src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/myriadpro-regular.woff2') format('woff2'), 
+		url('../fonts/myriadpro-regular.woff') format('woff'), 
+		url('../fonts/myriadpro-regular.ttf') format('truetype'),
+		url('../fonts/8143.otf') format('otf') 
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* HTML5 display-role reset for older browsers * article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+	color: #080808;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* Hedaer */
+
+.full-container {
+	width: 100%;
+	font-weight: bold;
+}
+
+.header {
+	background-color: #0072bc;
+}	
+
+.wrapper {
+	min-width: 320px;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center; 
+}	
+
+.flex-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-img {
+	width: 70px;
+}
+
+.heading {
+	font-size: 17px;
+	color: white;
+	margin-left: 5px;
+}
+
+.header-btn {
+	font-size: 14px;
+	background: #f26522;
+	padding: 5px 10px;
+	transition: background .3s linear;
+}
+
+.header-btn:hover {
+	background: #fa9f6a;
+	transition: background .3s linear;
+}
+
+/* Main-contant */
+
+.main {
+	padding: 30px 0;
+}
+
+.heading-text {
+	font-size: 27px;
+} 
+
+.subtext, .title-text {
+	margin-top: 30px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.title-text {
+	font-weight: bold;
+}
+
+.set-menu {
+	margin-top: 20px;
+}
+
+.cards {
+	margin: 10px auto 0;
+	border: 2px solid rgb(172, 172, 172);
+	border-radius: 10px;
+	width: 252px;
+	padding: 10px 10px 25px;		
+}
+
+.cards>img {
+	width: 225px;
+}
+
+.cards-description {
+	width: 185px;
+	margin: 0 auto;
+}
+
+.description-title, .cards-set .description-subtext {
+	color: #8e0000;
+	font-size: 22px;
+}
+
+.description-subtext {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+}
+
+.description-link {
+	display: block;
+	margin-top: 40px;
+	cursor: inherit;
+	pointer-events: none;
+	color: #444444;
+}
+
+.active {
+	cursor: pointer;
+	pointer-events: visible;
+	color: #06811a;
+	transition: color .3s linear;
+}
+
+.active:hover {
+	color: #f26522;
+	transition: color .3s linear;
+}
+
+.cards-set {
+	margin-top: 20px;
+}
+
+.cards-set .description-title {
+	color: #080808;
+}
+
+.cards-set img {
+	width: 300px;
+}
+
+.cards-set .description-subtext {
+	font-weight: bold;
+}
+
+/* Carousel */
+
+.section-carousel {
+	background-color: #6dcff6;
+	padding: 50px 0;
+}
+
+.carousel-title {
+	font-size: 30px;
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);	
+}
+
+.swiper-container {
+	margin-top: 30px;
+}
+
+.swiper-slide>img {
+	width: 300px;
+}
+
+.navigation-btn {
+	width: 150px;
+	margin: 30px auto 0;
+	position: relative;
+	bottom: 5px;
+}
+
+.button-prev, .button-next {
+	width: 20px;
+	height: 20px;
+	border-top: 5px solid white;
+	border-right: 5px solid white;	
+	border-radius: 2px;
+	transform: rotate(-135deg);
+	cursor: pointer;
+}
+
+.button-next {
+	transform: rotate(45deg);
+}
+
+.swiper-pagination {
+	position: static;
+	transition: background .3s ;
+	z-index: 0;
+	display: contents;
+}
+
+.swiper-pagination-bullet {
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	border-radius: 50%;
+	background: white;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: #f26522;
+}
+
+.footer {
+	padding: 10px 0;
+}
+
+.copyright {
+	font-size: 20px;
+	color: #333333;
+}
+
+
+@media screen and (min-width: 640px) {
+	
+	/* Hedaer */
+
+.wrapper {
+	min-width: 640px;
+	padding: 10px 25px;
+}	
+
+.logo-img {
+	width: 100px;
+}
+
+.heading {
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+.header-btn {
+	font-size: 20px;
+	padding: 10px 46px 10px 27px;
+}
+
+/* Main-contant */
+
+.main {
+	padding: 40px 0;
+}
+
+.subtext, .title-text {
+	margin-top: 40px;
+	font-size: 24px;
+}
+
+.set-menu {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	margin: 10px;
+}
+
+.cards-set {
+	margin: 10px;
+	width: 255px;
+}
+
+.cards-set img {
+	width: 255px;
+	margin-top: 15px;
+}
+
+.cards-set .description-subtext {
+	font-weight: bold;
+}
+
+/* Carousel */
+
+.carousel-title {
+	font-size: 40px;
+}
+
+.swiper-container {
+	margin-top: 40px;
+}
+
+.swiper-slide>img {
+	width: 600px;
+}
+
+.navigation-btn {
+	width: 180px;
+	margin: 40px auto 0;
+}
+
+.footer {
+	padding: 10px 0;
+}
+
+.copyright {
+	font-size: 22px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+	
+	/* Hedaer */
+
+.wrapper {
+	width: 1200px;
+	padding: 10px 14px;
+}	
+
+.logo {
+	margin-left: 11px;
+}
+
+.logo-img {
+	width: 141px;
+}
+
+.heading {
+	font-size: 32px;
+	margin-left: 20px;
+}
+
+.header-btn {
+	font-size: 26px;
+	padding: 11px 59px 15px 31px;
+}
+
+/* Main-contant */
+
+.main {
+	padding: 36px 0 44px;
+}
+
+.main>.wrapper {
+	padding: 0 10px;
+}
+
+.heading-text {
+	font-size: 45px;
+	width: 970px;
+	margin: 0 auto 0 114px;
+	line-height: 132%;
+} 
+
+.subtext, .title-text {
+	margin: 42px auto 0;
+	font-size: 30px;
+	width: 730px;
+	line-height: 115%;
+}
+
+.title-text {
+	text-align: left;
+	margin: 34px 0 0 3px;
+}
+
+.set-menu {
+	margin-top: 41px;
+	justify-content: space-between;
+}
+
+.cards {
+	margin: 0;
+	padding: 7px 0 29px;
+	width: 254px;		
+}
+
+.cards>img {
+	width: 250px;
+}
+
+.cards-description .description-title {
+	margin-top: 6px;
+}
+
+.orange-rolls .description-title, .brown-rolls .description-title {
+	margin-left: 13px;
+}
+
+.description-subtext {
+	margin-top: 20px;
+	line-height: 150%;
+}
+
+.description-link {
+	margin-top: 37px;
+	font-size: 17px;
+}
+
+.cards-set {
+	margin-top: 0;
+	margin-right: 0;
+	width: 365px;
+}
+
+.cards-set .description-title {
+	margin: 0 31px 3px 0;
+}
+
+.cards-set .description-subtext {
+	margin: 15px 0 0 25px;
+	text-align: left;
+	line-height: 110%;
+	white-space: pre-line;
+}
+
+.orange-rolls .description-title {
+	margin-left: 13px;
+}
+
+.cards-set img {
+	width: 365px;
+	margin-top: 0;
+}
+
+.cards-set .description-title:last-child {
+	margin:  3px 0 0 91px;
+}
+
+/* Carousel */
+
+.section-carousel {
+	padding: 58px 0 113px;
+}
+
+.section-carousel .wrapper {
+	padding: 10px 30px;
+}
+
+.carousel-title {
+	font-size: 45px;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	margin-top: 58px;
+}
+
+.swiper-slide>img {
+	width: 900px;
+}
+
+.navigation-btn {
+	width: 360px;
+	margin: 57px auto 0;
+	bottom: 6px;
+}
+
+.button-prev, .button-next {
+	width: 35px;
+	height: 35px;
+	border-top: 7px solid white;
+	border-right: 7px solid white;	
+}
+
+.button-prev {
+	margin-left: 20px;
+}
+
+.swiper-pagination-bullet {
+	margin-top: 3px;
+	width: 46px;
+	height: 46px;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+	margin: 0 10px;
+}
+
+.footer {
+	padding: 15px 0;
+}
+
+.copyright {
+	font-size: 22px;
+	margin-left: 18px;
+}
+
+}
